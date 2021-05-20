@@ -1,0 +1,285 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, hr, td, input, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "microsoft yahei";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+.header .container {
+  width: 1226px;
+  height: 40px;
+  margin: auto;
+}
+
+.header .container .top-nav, .header .container .top-info .top-R {
+  height: 40px;
+  float: left;
+}
+
+.header .container .top-nav a, .header .container .top-info .top-R a {
+  display: inline-block;
+  font-size: 12px;
+  color: #b0b0b0;
+  line-height: 40px;
+}
+
+.header .container .top-nav .App, .header .container .top-info .top-R .App {
+  position: relative;
+}
+
+.header .container .top-nav .App .Apps, .header .container .top-info .top-R .App .Apps {
+  position: absolute;
+  width: 125px;
+  height: 150px;
+  background-color: white;
+  z-index: 10;
+  left: -36px;
+  top: 40px;
+  display: none;
+}
+
+.header .container .top-nav .App .Apps .triangle, .header .container .top-info .top-R .App .Apps .triangle {
+  width: 0;
+  height: 0;
+  border: 16px solid transparent;
+  border-bottom-color: white;
+  position: absolute;
+  top: -24px;
+  left: 45px;
+}
+
+.header .container .top-nav .App .Apps img, .header .container .top-info .top-R .App .Apps img {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  margin: 18px 18px;
+}
+
+.header .container .top-nav .App .Apps p, .header .container .top-info .top-R .App .Apps p {
+  position: absolute;
+  top: 110px;
+  left: 23px;
+  font-size: 14px;
+}
+
+.header .container .top-nav a:hover, .header .container .top-info .top-R a:hover {
+  color: #fff;
+}
+
+.header .container .top-nav a:hover p, .header .container .top-info .top-R a:hover p {
+  color: black;
+}
+
+.header .container .top-nav .App:hover .Apps, .header .container .top-info .top-R .App:hover .Apps {
+  display: block;
+}
+
+.header .container .top-nav span, .header .container .top-info .top-R span {
+  display: inline-block;
+  margin: 0 .3em;
+  color: #424242;
+  font-family: sans-serif;
+}
+
+.header .container .top-nav span:hover, .header .container .top-info .top-R span:hover {
+  cursor: default;
+}
+
+.header .container .top-info {
+  float: right;
+}
+
+.header .container .top-info .top-R {
+  position: relative;
+}
+
+.header .container .top-info .top-R .news {
+  margin-right: 120px;
+}
+
+.header .container .top-info .top-R .buy {
+  display: block;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #1d1d1d;
+}
+
+.header .container .top-info .top-R .buy img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+}
+
+.header .container .top-info .top-R .buy p {
+  display: block;
+  position: absolute;
+  left: 34px;
+  top: 13px;
+  color: white;
+  font-size: 12px;
+}
+
+.header .container .top-info .top-R .buy:hover {
+  background-color: white;
+}
+
+.header .container .top-info .top-R .buy:hover img {
+  src: 'img/buys.png';
+}
+
+.header .container .top-info .top-R .buy:hover p {
+  color: orange;
+}
+
+.container {
+  width: 100%;
+  height: 100px;
+}
+
+.container .set-header {
+  width: 1226px;
+  height: 100px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.container .set-header .logo {
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+
+.container .set-header .logo img {
+  width: 45px;
+  height: 45px;
+}
+
+.container .set-header .header-nav {
+  width: 660px;
+  height: 100px;
+  position: absolute;
+  padding: 0 0 0 30px;
+  margin-left: 245px;
+}
+
+.container .set-header .header-nav ul li {
+  font-size: 16px;
+  height: 100px;
+  float: left;
+  line-height: 100px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.container .set-header .header-nav ul li a {
+  color: #000;
+}
+
+.container .set-header .header-nav ul li .box {
+  width: 100%;
+  height: 230px;
+  background-color: yellowgreen;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  left: -244px;
+  top: 100px;
+}
+
+.container .set-header .header-nav ul li .box ul {
+  width: 1226px;
+  height: 230px;
+  margin: 0 auto;
+  background-color: palevioletred;
+  border-top: 1px solid black;
+}
+
+.container .set-header .header-nav ul li .box ul li {
+  width: 184px;
+  height: 230px;
+  background-color: blueviolet;
+  float: left;
+}
+
+.container .set-header .header-nav ul li .box ul li img {
+  display: block;
+  margin: 30px 20px;
+  border-right: 1px solid #948989;
+}
+
+.container .set-header .header-nav ul li .box ul li .last {
+  border-right: none;
+}
+
+.container .set-header .header-nav ul li .box ul li a {
+  position: relative;
+  top: -54px;
+  left: 68px;
+  color: black;
+}
+
+.container .set-header .header-nav ul li .box ul li p {
+  position: relative;
+  top: -135px;
+  left: 72px;
+  color: orange;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.container .set-header .header-nav ul li .box ul li:first-child {
+  margin-left: 14px;
+}
+
+.container .set-header .header-nav li:hover a {
+  color: orange;
+}
+
+.container .set-header .header-nav li:hover .box {
+  display: block;
+}
+
+.container .set-header .inp {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.container .set-header .inp input {
+  width: 245px;
+  height: 50px;
+  float: left;
+  font-size: 16px;
+}
+
+.container .set-header .inp button {
+  width: 50px;
+  height: 54px;
+  float: right;
+  background-image: "../imgs/";
+}

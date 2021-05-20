@@ -1,0 +1,359 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, hr, td, input, textarea, option {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "microsoft yahei";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  border: none;
+}
+
+.img {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.img img {
+  width: 250px;
+  height: 100%;
+}
+
+.header {
+  width: calc(100% - 250px);
+  height: 80px;
+  position: absolute;
+  left: 250px;
+  top: 0;
+}
+
+.header .title {
+  width: 154px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.header .title img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.header .title p {
+  position: absolute;
+  left: 50px;
+}
+
+.header .nav-til {
+  width: 355px;
+  height: 40px;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.header .nav-til ul li {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header .nav-til ul li a {
+  display: block;
+  width: 56px;
+  height: 40px;
+  font-size: 14px;
+  color: #838383;
+  line-height: 40px;
+}
+
+.header .nav-til ul li a:hover {
+  color: #ff6900;
+}
+
+.header .nav-til span {
+  position: absolute;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 14px;
+  height: 14px;
+  width: 0;
+  border-right: 1px solid #ddd;
+}
+
+.header .nav-til p {
+  width: 100px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .nav-til p a {
+  color: #838383;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.header .nav-til p .boxs {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: white;
+  position: absolute;
+  top: 18px;
+  left: 75px;
+}
+
+.header .nav-til p .English {
+  width: 90px;
+  height: 80px;
+  position: absolute;
+  top: 42px;
+  right: 30px;
+  z-index: 1000;
+  display: none;
+}
+
+.header .nav-til p .English ul li {
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: white;
+  font-size: 14px;
+  color: #838383;
+  border-radius: 10%;
+}
+
+.header .nav-til p .English ul li:hover {
+  background-color: #ff5c00;
+  opacity: 0.8;
+  color: black;
+}
+
+.header .nav-til p:hover a {
+  color: #ff6900;
+}
+
+.header .nav-til p:hover .boxs {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.header .nav-til p:hover .English {
+  display: block;
+}
+
+.register {
+  width: 450px;
+  height: 620px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 600px;
+  margin-right: auto;
+  margin-bottom: 80px;
+  box-shadow: 0 0 10px 0;
+}
+
+.register .main {
+  position: absolute;
+  width: 360px;
+  height: 510px;
+  margin-top: 45px;
+  margin-left: 45px;
+}
+
+.register .main .scroll {
+  width: 360px;
+  height: 41px;
+}
+
+.register .main .scroll .tab {
+  width: 128px;
+  height: 41px;
+}
+
+.register .main .scroll .tab a {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 40px;
+  font-weight: 500;
+  color: #333;
+  font-size: 23px;
+  margin-right: 4px;
+  line-height: 40px;
+}
+
+.register .main .scroll .tab a:last-child {
+  border-bottom: 2px solid #ff5c00;
+}
+
+.register .main .scroll .tab a:first-child {
+  color: #ebebeb;
+}
+
+.register .main .contant {
+  width: 360px;
+  height: 375px;
+  position: absolute;
+  top: 41px;
+  left: 0;
+}
+
+.register .main .contant .contant-main {
+  padding: 20px 2px 0;
+}
+
+.register .main .contant .contant-main input {
+  width: 350px;
+  height: 60px;
+  font-size: 17px;
+  margin-top: 5px;
+  border: 1px solid white;
+  border-radius: 10px 10px 10px 10px;
+  outline: none;
+}
+
+.register .main .contant .contant-main .tex {
+  background-color: #ebebeb;
+  padding-top: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  text-indent: 12px;
+  color: gray;
+}
+
+.register .main .contant .contant-main p {
+  font-size: 12px;
+  color: red;
+  margin-top: 3px;
+  text-indent: 12px;
+  display: none;
+}
+
+.register .main .contant .contant-main .psw {
+  background-color: #ebebeb;
+  padding-top: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  text-indent: 12px;
+  color: gray;
+}
+
+.register .main .contant .contant-main .cipher {
+  background-color: #ebebeb;
+  padding-top: 5px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 5px;
+  text-indent: 12px;
+  color: gray;
+}
+
+.register .main .contant .contant-main .inp {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: #ff5c00;
+  opacity: .4;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.register .main .contant .contant-main .tex-word {
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.register .main .contant .contant-main .tex-word a {
+  font-size: 17px;
+  color: #f4a578;
+}
+
+.register .main .contant .contant-main .tex-word .phoneN {
+  display: block;
+  float: right;
+}
+
+.register .main .mi-logo {
+  width: 360px;
+  height: 96px;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+
+.register .main .mi-logo .mi-logo-title {
+  width: 100%;
+  height: 40px;
+}
+
+.register .main .mi-logo .mi-logo-title p {
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+  color: #aaa;
+}
+
+.register .main .mi-logo .mi-logo-sns {
+  width: 360px;
+  height: 58px;
+  position: relative;
+}
+
+.register .main .mi-logo .mi-logo-sns .share {
+  width: 280px;
+  height: 58px;
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: flex;
+}
+
+.register .main .mi-logo .mi-logo-sns .share a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.bq {
+  width: calc(100% - 250px);
+  height: 20px;
+  position: relative;
+  left: 250px;
+  bottom: 20px;
+}
+
+.bq p {
+  position: absolute;
+  left: 380px;
+  top: 0;
+  color: #999;
+  font-size: 12px;
+}
